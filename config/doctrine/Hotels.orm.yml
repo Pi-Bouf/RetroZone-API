@@ -1,0 +1,40 @@
+App\Entity\Hotels:
+    type: entity
+
+    # Primary key
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+    # Columns
+    fields:
+        name:
+            type: string
+            length: 50
+        link:
+            type: string
+            length: 400
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+            nullable: true
+        deletedAt:
+            type: datetime
+            nullable: true
+
+    # Relational
+    manyToOne:
+        user:
+            targetEntity: Users
+            inversedBy: hotels
+            joinColumn:
+                name: user_id
+                referencedColumnName: id
+
+    lifecycleCallbacks:
+        prePersist: [ setCreatedAtValue ]
+        preUpdate:  [ setUpdatedAtValue ]
+        preRemove:  [ setDeletedAtValue ]

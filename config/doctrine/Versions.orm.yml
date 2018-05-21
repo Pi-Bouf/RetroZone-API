@@ -1,0 +1,22 @@
+App\Entity\Versions:
+    type: entity
+
+    # Primary key
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+##private $versionNumber;
+  #    private $releaseDate;
+  #    private $authorized;
+    # Columns
+    fields:
+        versionNumber:
+            type: string
+            length: 50
+        releaseDate:
+            type: datetime
+        authorized:
+            type: boolean

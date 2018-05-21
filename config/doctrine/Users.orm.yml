@@ -1,0 +1,43 @@
+App\Entity\Users:
+    type: entity
+
+    # Primary key
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+    # Columns
+    fields:
+        firstName:
+            type: string
+            length: 50
+        lastName:
+            type: string
+            length: 50
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 32
+        createdAt:
+            type: datetime
+        updatedAt:
+            type: datetime
+            nullable: true
+        deletedAt:
+            type: datetime
+            nullable: true
+
+    # Relational
+    oneToMany:
+            hotels:
+                targetEntity: Hotels
+                mappedBy: user
+
+    lifecycleCallbacks:
+            prePersist: [ setCreatedAtValue ]
+            preUpdate:  [ setUpdatedAtValue ]
+            preRemove:  [ setDeletedAtValue ]

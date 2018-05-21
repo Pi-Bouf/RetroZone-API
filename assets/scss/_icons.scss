@@ -1,0 +1,29 @@
+.icon {
+  display: inline-block;
+  background: url('../img/habbo_sprite.png');
+  margin: 2px 2px 0px 2px;
+
+  &.cross {
+    width: 25px;
+    height: 27px;
+    background-position: -396px -232px;
+  }
+
+  &.tick {
+    width: 25px;
+    height: 27px;
+    background-position: -488px -200px;
+  }
+
+  &.plus {
+    width: 26px;
+    height: 28px;
+    background-position: -460px -200px;
+
+    &:hover {
+      width: 26px;
+      height: 28px;
+      background-position: -486px -48px;
+    }
+  }
+}

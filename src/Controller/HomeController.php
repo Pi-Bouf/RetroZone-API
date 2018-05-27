@@ -1,9 +1,7 @@
 <?php
 namespace App\Controller;
 
-
 use App\Entity\Hotels;
-use App\Entity\Users;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController

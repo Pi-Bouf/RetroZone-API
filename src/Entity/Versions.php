@@ -9,4 +9,9 @@ class Versions
     private $versionNumber;
     private $releaseDate;
     private $authorized;
+
+    public function getAuthorized()
+    {
+        return $this->authorized;
+    }
 }

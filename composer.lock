@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b81323b4d246220d387571f74874b63",
+    "content-hash": "9a2af567bd42af949e6d000d6032e629",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2113,16 +2113,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.0.9",
+            "version": "v4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "1f99622d8a63b160bfdd0ad7b2da56ee413cba64"
+                "reference": "4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/1f99622d8a63b160bfdd0ad7b2da56ee413cba64",
-                "reference": "1f99622d8a63b160bfdd0ad7b2da56ee413cba64",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18",
+                "reference": "4b272d65e9c0d2d40e2d23bab3c7a184ad4a3a18",
                 "shasum": ""
             },
             "require": {
@@ -2180,7 +2180,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-30T01:05:59+00:00"
+            "time": "2018-05-25T11:57:52+00:00"
         },
         {
             "name": "symfony/doctrine-bridge",

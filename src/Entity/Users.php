@@ -23,17 +23,17 @@ class Users
         $this->hotels = new ArrayCollection();
     }
 
-    public function setCreatedAtValue(LifecycleEventArgs $event)
+    public function setCreatedAtValue()
     {
         $this->createdAt = new \DateTime();
     }
 
-    public function setUpdatedAtValue(LifecycleEventArgs $event)
+    public function setUpdatedAtValue()
     {
         $this->updatedAt = new \DateTime();
     }
 
-    public function setDeletedAtValue(LifecycleEventArgs $event)
+    public function setDeletedAtValue()
     {
         $this->deletedAt = new \DateTime();
     }

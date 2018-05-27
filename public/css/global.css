@@ -2,6 +2,21 @@
   font-family: "Ubuntu Condensed";
   src: url("../fonts/UbuntuCondensed-Regular.ttf") format("opentype"); }
 
+::-webkit-scrollbar {
+  margin-top: 25px;
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0); }
+
 @keyframes logoUpAndDown {
   0% {
     margin-top: 50px; }
@@ -36,7 +51,8 @@ body {
   padding: 0;
   background: linear-gradient(135deg, #15507c, #0c3a65) no-repeat fixed;
   font-family: "Ubuntu Condensed","Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-  color: #FFF; }
+  color: #FFF;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
@@ -98,12 +114,28 @@ page {
     page .mainPanel .hotelList {
       margin-top: 10px;
       background-color: #0b6395;
-      border-radius: 5px;
-      padding: 5px; }
+      border-radius: 5px; }
       @media (min-width: 768px) {
         page .mainPanel .hotelList {
           margin-left: 5px;
           margin-right: 5px; } }
+      page .mainPanel .hotelList .title {
+        padding: 5px;
+        border-bottom: 1px solid white; }
+      page .mainPanel .hotelList .list {
+        height: 500px;
+        overflow: auto;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        page .mainPanel .hotelList .list .item {
+          padding: 5px;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.2); }
+          page .mainPanel .hotelList .list .item img.left {
+            height: 120px;
+            width: 120px;
+            border-radius: 5px; }
+          page .mainPanel .hotelList .list .item:last-child {
+            border-bottom: none; }
   page .newsPanel {
     width: 30%;
     min-width: 300px;

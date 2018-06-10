@@ -71,7 +71,7 @@ class ApiController extends Controller
         );
 
         $responseData["versionNumber"] = $version->getVersionNumber();
-        $responseData["link"] = "http://retrozone.pierreb.tk/" + $version + ".zip";
+        $responseData["link"] = "http://retrozone.pierreb.tk/" + $version->getVersionNumber() + ".zip";
 
         return new JsonResponse([$responseData, $responseData]);
     }

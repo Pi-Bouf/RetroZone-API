@@ -4,3 +4,9 @@ index:
 api:
     path: /api/hotels
     controller: App\Controller\ApiController::allHotels
+check_update:
+    path: /api/check_update
+    controller: App\Controller\ApiController::checkUpdate
+need_update:
+    path: /api/need_update
+    controller: App\Controller\ApiController::needUpdate

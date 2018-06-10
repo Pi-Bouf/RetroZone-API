@@ -21,9 +21,10 @@ class VersionGrabber
 
     public function checkCallerVersion()
     {
+        /*
         if($_SERVER['APP_ENV'] == "dev") {
             return true;
-        }
+        } */
 
         $request = $this->requestStack->getCurrentRequest();
         $callerVersion = $request->headers->get("API-VERSION");
